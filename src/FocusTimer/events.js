@@ -1,4 +1,6 @@
+import state from './state.js';
 import { controls } from './elements.js';
+import { updateDisplay } from './timer.js';
 import * as actions from './actions.js';
 import * as elements from './elements.js';
 
@@ -15,5 +17,14 @@ export function setMinutes() {
     elements.minutes.textContent = '';
   });
 
-  elements.minutes.onkeypress = (event) => /\d/.test(event.key)
+  elements.minutes.onkeypress = (event) => /\d/.test(event.key);
+
+  elements.minutes.addEventListener('blur', (e) => {
+    let time = e.currentTarget.textContent;
+    time = time > 60 ? 60 : time;
+    state.minutes = time;
+    state.seconds = 0;
+    updateDisplay();
+    elements.minutes.removeAttribute('contenteditable');
+  });
 }
