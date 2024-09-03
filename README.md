@@ -31,7 +31,7 @@ O **Focus Timer** é uma aplicação de contador regressivo que ajuda você a ge
     ```
 2. Navegue até o diretório do projeto:
     ```bash
-    cd Projeto-FocusTimer
+    cd Projeto-09-curso-fullstack-rocketseat
     ```
 3. Abra o arquivo `index.html` no seu navegador.
 
