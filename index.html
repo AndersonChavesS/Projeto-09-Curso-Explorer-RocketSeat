@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
     <script src="./script.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/dc20b22da2.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
     <div id="app">
       <button id="toggle-mode">
         <span>Ativar/Desativar Light Mode</span>
-        <img src="./assets/sun.svg" alt="sun" />
-        <img src="./assets/moon.svg" alt="" />
+        <i class="ph-bold ph-sun"></i>
+        <i class="ph-bold ph-moon"></i>
       </button>
       <section id="timer">
         <span id="minutes">00</span>
@@ -27,12 +24,12 @@
       </section>
 
       <section id="controls">
-        <button><img src="./assets/play.svg" alt="play" /></button>
-        <button><img src="./assets/pause.svg" alt="pause" /></button>
-        <button><img src="./assets/timer.svg" alt="timer" /></button>
-        <button><img src="./assets/stop.svg" alt="stop"></button>
-        <button><img src="./assets/speaker-none.svg" alt="sem audio"></button>
-        <button><img src="./assets/speaker-high.svg" alt="com audio"></button>
+        <button class="ph ph-play-circle"></button>
+        <button class="ph ph-pause-circle"></button>
+        <button class="ph ph-timer"></button>
+        <button class="ph ph-stop-circle"></button>
+        <button class="ph ph-speaker-none"></button>
+        <button class="ph ph-speaker-high"></button>
       </section>
     </div>
   </body>
