@@ -16,6 +16,7 @@ export function reset() {
 
 export function set() {
   elements.minutes.setAttribute('contenteditable', true);
+  elements.minutes.focus()
 }
 
 export function toggleMusic() {
