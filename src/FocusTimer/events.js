@@ -14,4 +14,6 @@ export function setMinutes() {
   elements.minutes.addEventListener('focus', () => {
     elements.minutes.textContent = '';
   });
+
+  elements.minutes.onkeypress = (event) => /\d/.test(event.key)
 }
