@@ -34,6 +34,16 @@ html:not(.light) .ph-moon {
   line-height: 0;
   color: var(--text-color);
 }
+.sr-only{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0px;
+  border: 0px;
+  appearance: none;
+}
 
 body {
   background: var(--bg-color);
